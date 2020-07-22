@@ -282,6 +282,8 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
 exec --no-startup-id owncloud
+exec --no-startup-id rclone --vfs-cache-mode writes mount OneDrive: /home/mens2lux/OneDrive
+exec_always --no-startup-id amixer set Master toggle off
 # exec --no-startup-id dropbox
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
@@ -290,10 +292,10 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec --no-startup-id i3-msg 'workspace 2:2; exec /usr/bin/firefox'
-exec --no-startup-id i3-msg 'workspace 3:3🖃;  exec /usr/bin/evolution'
+# exec --no-startup-id i3-msg 'workspace 2:2; exec /usr/bin/firefox'
+# exec --no-startup-id i3-msg 'workspace 3:3🖃;  exec /usr/bin/evolution'
 exec --no-startup-id i3-msg 'workspace 1:1🗗; exec /usr/bin/gnome-terminal'
-exec --no-startup-id i3-msg 'workspace 4:4☕; exec /usr/bin/code'
+# exec --no-startup-id i3-msg 'workspace 4:4☕; exec /usr/bin/code'
 
 
 
